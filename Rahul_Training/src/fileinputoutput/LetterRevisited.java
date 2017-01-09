@@ -1,5 +1,7 @@
 package fileinputoutput;
 
+import java.io.BufferedOutputStream;
+import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
 
@@ -7,12 +9,17 @@ public class LetterRevisited {
 
 	public static void main(String[] args) throws IOException {
 		
-		FileWriter fw=new FileWriter("letter.txt");
+		FileWriter writer=new FileWriter("letter.txt");
+		BufferedWriter fw=new BufferedWriter(writer);
 		
-	/*	fw.write("+--------------------------------------------------+\n"+
-				"|                                             ###   |\n");
+//		bw.write("This is a test \n to check if linefeed works here.");
+		
+		
+		
+		fw.write("+--------------------------------------------------+\n");
 		fw.write("|                                             ###  |\n");
 		fw.write("|                                             ###  |\n");
+		fw.write("|                                             ###  |\n");	
 		fw.write("|                                                  |\n");
 		fw.write("|                                                  |\n");
 		fw.write("|                                  Rahul Kumar     |\n");
@@ -20,8 +27,7 @@ public class LetterRevisited {
 		fw.write("|                                  Hyderabad, TS   |\n");
 		fw.write("|                                                  |\n");
 		fw.write("+--------------------------------------------------+");
-	*/
-		fw.write("This is a test message \n to check if linefeed works or not");
+	
 		
 		fw.close();
 		
