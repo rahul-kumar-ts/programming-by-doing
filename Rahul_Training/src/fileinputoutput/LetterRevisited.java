@@ -9,7 +9,7 @@ public class LetterRevisited {
 		
 		FileWriter fw=new FileWriter("letter.txt");
 		
-		fw.write("+--------------------------------------------------+\n"+
+	/*	fw.write("+--------------------------------------------------+\n"+
 				"|                                             ###   |\n");
 		fw.write("|                                             ###  |\n");
 		fw.write("|                                             ###  |\n");
@@ -20,6 +20,8 @@ public class LetterRevisited {
 		fw.write("|                                  Hyderabad, TS   |\n");
 		fw.write("|                                                  |\n");
 		fw.write("+--------------------------------------------------+");
+	*/
+		fw.write("This is a test message \n to check if linefeed works or not");
 		
 		fw.close();
 		
